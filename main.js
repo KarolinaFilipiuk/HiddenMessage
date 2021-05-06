@@ -3,7 +3,7 @@ const div = document.querySelector(".message");
 const ul = document.querySelector("#hint");
 
 const passwords = ["poGOda", "poRa rokU", "ziEmia", "20", "jAVa"]
-const messages = ["Dzisiaj jest idealna pogoda na rower!", "Na szczęście mamy już wiosnę :)", "20..21", "Super", "script!"]
+const messages = ["Dzisiaj jest idealna pogoda na rower!", "Na szczęście mamy już wiosnę :)", "... nie jest płaska.", "20..21", "script!"]
 
 const addHints = () => {
     passwords.forEach(password => {
