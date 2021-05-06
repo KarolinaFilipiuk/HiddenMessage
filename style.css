@@ -4,9 +4,21 @@ body {
     text-align: center;
 }
 
-label, input {
+input {
     display: block;
-    margin: 10px auto;
+    margin: 50px auto;
+    margin-top: 10px;
+    padding: 10px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 10px;
     height: 40px;
     font-size: 30px;
     line-height: 40px;
@@ -16,32 +28,33 @@ label, input {
 .message {
     border: 2px solid black;
     font-size: 40px;
-    margin: 20px auto;
+    margin: 60px auto;
+    padding: 10px;
     min-height: 4vh;
     width: 70vw;
-    background-color: blueviolet;
-    word-wrap: break-word
+    background-color: rgb(135,206,250);
+    word-wrap: break-word;
 }
 
 .active {
-    background-color: gray;
-    color: whitesmoke;
+    background-color: rgb(135,206,235);
+    color: rgb(250, 250, 250);
 }
 
 #welcome {
-    background-color: black;
-    color: wheat;
+    background-color: rgb(110, 110, 110);
+    color: rgb(173,216,190);
     width: 100vw;
     padding: 10px;
 }
 
 #progress {
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(255,160,122);
 }
 
 #bar {
     width: 1%;
     height: 30px;
-    background-color: brown;
+    background-color: rgb(255,69,0);
 }
