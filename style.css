@@ -1,23 +1,47 @@
 body {
-    margin: 10vh;
+    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 label, input {
+    display: block;
+    margin: 10px auto;
     height: 40px;
     font-size: 30px;
     line-height: 40px;
     border-radius: 4px;
 }
 
-div {
+.message {
     border: 2px solid black;
     font-size: 40px;
-    margin: 20px;
+    margin: 20px auto;
+    min-height: 4vh;
+    width: 70vw;
+    background-color: blueviolet;
+    word-wrap: break-word
 }
 
 .active {
     background-color: gray;
     color: whitesmoke;
+}
+
+#welcome {
+    background-color: black;
+    color: wheat;
+    width: 100vw;
+    padding: 10px;
+}
+
+#progress {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#bar {
+    width: 1%;
+    height: 30px;
+    background-color: brown;
 }
