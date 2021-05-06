@@ -1,8 +1,23 @@
 const input = document.getElementById("password");
 const div = document.querySelector(".message");
+const ul = document.querySelector("#hint");
 
-const passwords = ["user", "wiosna", "Ania", "jeDeN", "DwA"]
-const messages = ["wyjechałam na zawsze", "piękna pora roku", "fajny masz styl", "Super", "działa!"]
+const passwords = ["poGOda", "poRa rokU", "ziEmia", "20", "jAVa"]
+const messages = ["Dzisiaj jest idealna pogoda na rower!", "Na szczęście mamy już wiosnę :)", "20..21", "Super", "script!"]
+
+const addHints = () => {
+    passwords.forEach(password => {
+        const li = document.createElement("li");
+        li.textContent = password;
+        li.style.listStyle = "none";
+        li.style.display = "inline";
+        li.style.marginLeft = "10px";
+        li.style.fontSize = "7px";
+        li.style.height = "30px"
+        li.style.color = "gray"
+        ul.appendChild(li);
+    })
+}
 
 const loadingData = () => {
     let i = 0;
@@ -60,3 +75,5 @@ input.addEventListener("focus", e => {
 input.addEventListener("blur", e => {
     e.target.classList.remove("active");
 })
+
+addHints()
